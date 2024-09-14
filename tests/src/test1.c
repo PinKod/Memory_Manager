@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "src/include/cust_allocation.h"
-#include "src/include/faults_handle.h"
+#include "../../src/include/cust_allocation.h"
+#include "../../src/include/faults_handle.h"
 
 void seg_fault() {
     int c = 1;
