@@ -10,7 +10,7 @@ void seg_fault() {
 }
 
 int main(void) {
-    setHandler(fault_handler);
+    handler();
     struct B {
         int a;
         double b;

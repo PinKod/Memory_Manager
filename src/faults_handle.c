@@ -4,9 +4,19 @@
 #include "include/faults_handle.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <sys/signal.h>
+
+#ifdef MACOS
+#include <signal.h>// Code for macOS
+#endif
+
+#ifdef LINUX
+#include <sys/signal.h>// Code for Linux
+#endif
 
 #include "include/cust_allocation.h"
+
+void setHandler(void (*handler)(int,siginfo_t *,void *));
+void fault_handler(int signo, siginfo_t *info, void *extra);
 
 void setHandler(void (*handler)(int,siginfo_t *,void *))
 {
@@ -47,4 +57,8 @@ void fault_handler(int signo, siginfo_t *info, void *extra)
     cust_free();
     //printf("fault handle free\n");
     exit(1);
+}
+
+void handler() {
+    setHandler(fault_handler);
 }
