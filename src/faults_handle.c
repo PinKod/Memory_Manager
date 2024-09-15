@@ -9,7 +9,7 @@
 #include <signal.h>// Code for macOS
 #endif
 
-#ifdef LINUX
+#ifdef __linux__
 #include <sys/signal.h>// Code for Linux
 #endif
 
@@ -18,8 +18,7 @@
 void setHandler(void (*handler)(int,siginfo_t *,void *));
 void fault_handler(int signo, siginfo_t *info, void *extra);
 
-void setHandler(void (*handler)(int,siginfo_t *,void *))
-{
+void setHandler(void (*handler)(int,siginfo_t *,void *)) {
     struct sigaction action = {0};
     action.sa_flags = SA_SIGINFO;
     action.sa_sigaction = handler;

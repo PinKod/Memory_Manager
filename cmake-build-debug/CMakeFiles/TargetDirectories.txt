@@ -1,3 +1,3 @@
-/home/pinkod/c_projects/cust_allocation/cmake-build-debug/CMakeFiles/cust_allocation.dir
-/home/pinkod/c_projects/cust_allocation/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/pinkod/c_projects/cust_allocation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/CMakeFiles/cust_allocation.dir
+/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/CMakeFiles/rebuild_cache.dir

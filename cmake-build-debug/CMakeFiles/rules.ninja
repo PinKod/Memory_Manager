@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/pinkod/clion-2024.1.1/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/pinkod/c_projects/cust_allocation -B/home/pinkod/c_projects/cust_allocation/cmake-build-debug
+  command = /home/pinkod/clion-2024.1.1/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/pinkod/c_projects/Memory_Manager -B/home/pinkod/c_projects/Memory_Manager/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 
