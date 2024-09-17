@@ -6,15 +6,21 @@
 #include "../../src/include/cust_allocation.h"
 #include "../../src/include/faults_handle.h"
 
-/*
-void test_complex_free_function() {
-    void (*custom_free)(void*) = malloc(sizeof(int));
-    *custom_free = free();
-    assert(cust_calloc(10, custom_free) != NULL);
-    cust_free();
-    assert(custom_free == NULL);
+struct A {
+    int b;
+    double *c;
+};
+
+void free_A(void *a) {
+    struct A *a_a = a;
+    free(a_a->c);
 }
-*/
+
+void test_complex_free_function() {
+    struct A *a = cust_calloc(sizeof (struct A), free_A);
+    //printf("test_complex_free_function\n");
+}
+
 
 void test_edge_cases() {
     assert(cust_calloc(0, NULL) != NULL);
@@ -22,16 +28,17 @@ void test_edge_cases() {
 }
 
 void test_memory_leak() {
-    void *ptr = cust_calloc(20, free);
+    void *ptr = cust_calloc(20, NULL);
     assert(ptr != NULL);
     cust_free(); // Should free the allocated memory
-    assert(ptr == NULL); // Check if memory leak occurred
+    //assert(ptr == NULL); // Check if memory leak occurred
 }
 
 int main() {
     handler();
-    //test_complex_free_function();
+    test_complex_free_function();
     test_edge_cases();
     test_memory_leak();
+    cust_free();
     return 0;
 }

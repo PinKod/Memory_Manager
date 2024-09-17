@@ -10,6 +10,7 @@ void seg_fault() {
 }
 
 int main(void) {
+    //printf("before before\n");
     handler();
     struct B {
         int a;
@@ -18,13 +19,12 @@ int main(void) {
     };
     int *a = cust_calloc(sizeof(int) * 2, NULL);
     struct B *b = cust_calloc(sizeof(struct B) * 3, NULL);
-    printf("%lld\n", memory_manager.num_of_references);
-    printf("before\n");
-
-
-
+    *a = 1;
+    //printf("a=%d\n", *a);
+    //printf("%lld\n", memory_manager.num_of_references);
+    //printf("before\n");
     cust_free();
-    printf("after\n");
-    printf("%lld\n", memory_manager.num_of_references);
+    //printf("after\n");
+    //printf("%lld\n", memory_manager.num_of_references);
     return 0;
 }

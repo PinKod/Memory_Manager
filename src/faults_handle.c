@@ -6,11 +6,11 @@
 #include <stdlib.h>
 
 #ifdef MACOS
-#include <signal.h>// Code for macOS
+#include <signal.h>      // Code for macOS
 #endif
 
 #ifdef __linux__
-#include <sys/signal.h>// Code for Linux
+#include <sys/signal.h>  // Code for Linux
 #endif
 
 #include "include/cust_allocation.h"
@@ -31,15 +31,12 @@ void setHandler(void (*handler)(int,siginfo_t *,void *)) {
 */
 //#ifdef DEBUG
     for(int i = 1; i <= 31; i++) {
-        if(sigaction(i, &action, NULL) == -1) {
-#ifdef DEBUG
-            printf("sig%d: sigaction", i);
-#endif
-            exit(1);
-        }
+        if(i == 9 || i == 19) continue;
+        sigaction(i, &action, NULL);
     }
-//#endif
+
 }
+
 
 void fault_handler(int signo, siginfo_t *info, void *extra)
 {
@@ -48,9 +45,7 @@ void fault_handler(int signo, siginfo_t *info, void *extra)
 	int val;
 	printf("Signal %d received from parent\n", signo);
 	printf("siginfo address=%x\n",info->si_addr);
-
 	val= p->uc_mcontext.arm_pc;
-
 	printf("address = %x\n",val);
 #endif
     cust_free();
