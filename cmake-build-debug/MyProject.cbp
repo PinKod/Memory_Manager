@@ -8,101 +8,103 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug"/>
+				<Option working_dir="/home/pinkod/c_projects/Memory_Manager/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test2">
-				<Option output="/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/test2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug"/>
+				<Option output="/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/test2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pinkod/c_projects/Memory_Manager/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 test2"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 test2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test2/fast">
-				<Option output="/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/test2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug"/>
+				<Option output="/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/test2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pinkod/c_projects/Memory_Manager/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 test2/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 test2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test">
-				<Option working_dir="/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug"/>
+				<Option working_dir="/home/pinkod/c_projects/Memory_Manager/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug"/>
+				<Option working_dir="/home/pinkod/c_projects/Memory_Manager/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug"/>
+				<Option working_dir="/home/pinkod/c_projects/Memory_Manager/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/calamary/CLionProjects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/pinkod/c_projects/Memory_Manager/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/calamary/CLionProjects/Memory_Manager/src/cust_allocation.c">
+		<Unit filename="/home/pinkod/c_projects/Memory_Manager/src/cust_allocation.c">
 			<Option target="test2"/>
 		</Unit>
-		<Unit filename="/Users/calamary/CLionProjects/Memory_Manager/src/faults_handle.c">
+		<Unit filename="/home/pinkod/c_projects/Memory_Manager/src/faults_handle.c">
 			<Option target="test2"/>
 		</Unit>
-		<Unit filename="/Users/calamary/CLionProjects/Memory_Manager/src/include/extern_memery_manager.c">
+		<Unit filename="/home/pinkod/c_projects/Memory_Manager/src/include/extern_memery_manager.c">
 			<Option target="test2"/>
 		</Unit>
-		<Unit filename="/Users/calamary/CLionProjects/Memory_Manager/tests/src/test2.c">
+		<Unit filename="/home/pinkod/c_projects/Memory_Manager/tests/src/test2.c">
 			<Option target="test2"/>
 		</Unit>
-		<Unit filename="/Users/calamary/CLionProjects/Memory_Manager/CMakeLists.txt">
+		<Unit filename="/home/pinkod/c_projects/Memory_Manager/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

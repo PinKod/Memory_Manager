@@ -1,7 +1,12 @@
 #!/bin/bash
 
 make all
-make test -i
+
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  make test_l -i
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  make test_m -i
+fi
 
 printf '\33c\e[3J'
 

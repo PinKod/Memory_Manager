@@ -58,6 +58,8 @@ test_clean:
 clean:
 	rm -rf ./*.o ./obj/*.o ./tests/src/test1 ./tests/src/test2 ./tests/src/test3 ./tests/src/*.dSYM $(LIB_NAME)
 
+
+
 test_l: test1 test2 test3
 
 test1: tests/src/test1.c
