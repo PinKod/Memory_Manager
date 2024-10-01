@@ -1,6 +1,7 @@
 #!/bin/bash
 
-reset
+printf '\33c\e[3J'
+
 
 for file in tests/outs/*; do
   if [ -x "$file" ]; then
