@@ -32,19 +32,26 @@ LDFLAGS = -L. -lcust_allocation
 test : test_clean obj_dir $(foreach test, $(wildcard tests/src/test*.c), $(test:.c=))
 	$(CC) $(CFLAGS) $(LDFLAGS) $(foreach test, $(wildcard tests/src/test*.c), $(patsubst %.c,%.o, $(test))) -o $(@:test=%)
 	rm -rf tests/src/*.dSYM
-	mkdir -p ./temp_folder
-	cp tests/src/*.c ./temp_folder
+	mkdir tmp
+	mv tests/src/*.c /tmp
+	mv * tests/outs
+	mv tmp/* tests/src/
 
 
+
+
+#test: test_clean obj_dir $(foreach test, $(wildcard tests/src/test*.c), $(test:.c=.o))
+#	$(CC) $(CFLAGS) $(LDFLAGS) $(foreach test, $(wildcard $(OBJ_DIR_TESTS)/test*.o), $(test)) -o $(OBJ_DIR_TESTS)/$(@:test=%)
 
 
 obj_dir :
 	mkdir -p $(OBJ_DIR_TESTS)
 
 test_clean:
-	rm -rf ./*.o ./obj/*.o ./tests/src/test1 ./tests/src/test2 ./tests/src/test3 ./tests/src/*.dSYM
+	rm -rf ./*.o ./obj/*.o ./tests/src/test1 ./tests/src/test2 ./tests/src/test3 ./tests/src/*.dSYM ./tests/src/*.o
+
 
 clean:
-	rm -rf ./*.o ./obj/*.o ./tests/src/test1 ./tests/src/test2 ./tests/src/test3 ./tests/src/*.dSYM $(LIB_NAME)
+	rm -rf ./*.o ./obj/*.o ./tests/src/*.o ./tests/src/test1 ./tests/src/test2 ./tests/src/test3 ./tests/src/*.dSYM $(LIB_NAME)
 
 

@@ -33,9 +33,8 @@ void setHandler(void (*handler)(int,siginfo_t *,void *)) {
     for(int i = 1; i <= 31; i++) {
         if(i == 9 || i == 19) continue;
 #ifdef MACOS
-    sa_sigaction(i, &action, NULL);
+        sa_sigaction(i, &action, NULL);
 #endif
-
 #ifdef __linux__
         sigaction(i, &action, NULL);
 #endif
