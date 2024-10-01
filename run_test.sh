@@ -1,7 +1,9 @@
 #!/bin/bash
 
-printf '\33c\e[3J'
+make all
+make test -i
 
+printf '\33c\e[3J'
 
 for file in tests/outs/*; do
   if [ -x "$file" ]; then

@@ -39,7 +39,6 @@ void setHandler(void (*handler)(int,siginfo_t *,void *)) {
 #ifdef __linux__
         sigaction(i, &action, NULL);
 #endif
-
     }
 
 }
