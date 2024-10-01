@@ -34,7 +34,12 @@ test : test_clean obj_dir $(foreach test, $(wildcard tests/src/test*.c), $(test:
 	rm -rf tests/src/*.dSYM
 	mkdir -p ./temp_folder
 	cp tests/src/*.c ./temp_folder
-
+	rm tests/src/*.c
+	cp tests/src/* ./tests/outs/
+	rm tests/src/*
+	cp ./temp_folder/* ./tests/src/
+	rm -rf ./temp_folder
+	sh run_test.sh
 
 
 
